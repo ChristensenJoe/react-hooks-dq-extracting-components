@@ -1,4 +1,5 @@
 import SingleMessage from "./SingleMessage"
+import MessageForm from "./MessageForm"
 
 function Messages({messages}) {
     const messageList = messages.map((message) => {
@@ -15,9 +16,7 @@ function Messages({messages}) {
             {messageList}
           </ul>
         </section>
-        <form className="message-form">
-          <input placeholder="Type a message..." />
-        </form>
+        <MessageForm />
       </main>
     );
 }
